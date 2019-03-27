@@ -25,7 +25,7 @@ public class MessageReceiverController {
 		// 排序以后，把数组里面的元素拼接成一个String，使用SHA1算法进行加密
 		// 加密的时候，需要使用一个【秘钥】，这个秘钥在公众号平台中生成的
 		// 加密的以后的内容，如果跟signature相同，表示验证通过
-
+    
 		return echostr;
 	}
 }
