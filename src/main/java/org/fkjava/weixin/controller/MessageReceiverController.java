@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController // 基于RESTful风格的WEB服务的控制器
 @RequestMapping("/liujintian/wexin/reciver") // 访问哪个路径的时候，被此控制器处理
 public class MessageReceiverController {
-
+   
 	// 必须要有Handler方法才不会出现404  
 	// Handler方法就是用来处理各种请求的操作、入口
 	@GetMapping
