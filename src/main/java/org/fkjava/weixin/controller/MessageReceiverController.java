@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 // Controller（控制器），其实就相当于是Servlet，但是Spring MVC把所有的Servlet相关API都屏蔽掉了！
 // 屏蔽的好处：不需要依赖Tomcat就可以实现单元测试。
 @RestController // 基于RESTful风格的WEB服务的控制器
-@RequestMapping("/ljt/wexin/reciver") // 访问哪个路径的时候，被此控制器处理
+@RequestMapping("/liujintian/wexin/reciver") // 访问哪个路径的时候，被此控制器处理
 public class MessageReceiverController {
 
 	// 必须要有Handler方法才不会出现404  
