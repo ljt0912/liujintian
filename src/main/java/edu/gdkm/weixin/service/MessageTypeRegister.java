@@ -4,10 +4,11 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-import org.fkjava.weixin.domain.text.TextInMessage;
+
 
 import edu.gdkm.weixin.domain.InMessage;
 import edu.gdkm.weixin.domain.event.EventInMessage;
+import edu.gdkm.weixin.domain.text.TextInMessage;
 
 /**
  * 负责注册消息类型，把MsgType和对应的class关联起来

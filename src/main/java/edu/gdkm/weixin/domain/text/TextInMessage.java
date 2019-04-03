@@ -1,4 +1,4 @@
-package org.fkjava.weixin.domain.text;
+package edu.gdkm.weixin.domain.text;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

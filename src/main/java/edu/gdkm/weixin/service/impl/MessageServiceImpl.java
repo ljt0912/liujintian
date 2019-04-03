@@ -1,8 +1,6 @@
-package org.fkjava.weixin.service.impl;
+package edu.gdkm.weixin.service.impl;
 
-import org.fkjava.weixin.domain.*;
 
-import org.fkjava.weixin.service.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
