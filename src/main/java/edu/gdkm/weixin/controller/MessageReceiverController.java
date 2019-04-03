@@ -23,7 +23,7 @@ import edu.gdkm.weixin.service.MessageTypeRegister;
 @RestController // 基于RESTful风格的WEB服务的控制器
 @RequestMapping("/liujintian/wexin/reciver") // 访问哪个路径的时候，被此控制器处理
 public class MessageReceiverController {
-
+   
 	// 自动从Spring的容器里面获取一个消息服务出来，用于处理转换后的消息。现在还未实现消息的处理。
 	// 能够自动根据接口和实现的关系，自动把合适类型的对象放进来。
 	@Autowired
