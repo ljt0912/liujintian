@@ -29,7 +29,6 @@ public class MessageReceiverController {
 	@Autowired
 	@Qualifier("xmlMapper")
 	private XmlMapper xmlMapper;
-	
 
 	private static final Logger LOG = LoggerFactory.getLogger(MessageReceiverController.class);
 
