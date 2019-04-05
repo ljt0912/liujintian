@@ -1,6 +1,4 @@
 package edu.gdkm.weixin.controller;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,7 +60,8 @@ public class MessageReceiverController {
 	) {
 		// 把收到的请求消息、请求参数全部打印出来
 		// 使用日志记录器打印可以非常方便输出日期、时间和位置，并且可以根据日志级别灵活过滤需要的信息。
-		LOG.debug("\n收到请求参数\n"//
+	LOG.debug("\n收到请求参数\n"//
+			
 				+ "    signature : {}\n"// 大括号是一个占位符，需要后面继续传入实际的参数
 				+ "    timestamp : {}\n"//
 				+ "    nonce : {}\n"//
