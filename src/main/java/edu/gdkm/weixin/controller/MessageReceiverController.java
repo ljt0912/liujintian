@@ -40,12 +40,20 @@ public class MessageReceiverController {
 			@RequestParam("timestamp") String timestamp, //
 			@RequestParam("nonce") String nonce, //
 			@RequestParam("echostr") String echostr//
+			
 	) {
 		// 正常的接入方法要求对数据的有效性进行验证，验证通过以后返回echostr
 		// 把timestamp和nonce放入一个数组，并且对两个字符串进行排序
 		// 排序以后，把数组里面的元素拼接成一个String，使用SHA1算法进行加密
 		// 加密的时候，需要使用一个【秘钥】，这个秘钥在公众号平台中生成的
 		// 加密的以后的内容，如果跟signature相同，表示验证通过
+		LOG.debug("\n收到请求参数\n"//
+				
+				+ "    signature : {}\n"// 大括号是一个占位符，需要后面继续传入实际的参数
+				+ "    timestamp : {}\n"//
+				+ "    nonce : {}\n"//
+				+ "收到的请求内容\n{}\n"//
+				, signature, timestamp, nonce);
 
 		return echostr;
 	}
