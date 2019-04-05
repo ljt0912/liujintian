@@ -56,6 +56,7 @@ public class MessageReceiverController {
 				, signature, timestamp, nonce);
 
 		return echostr;
+		
 	}
 
 	@PostMapping
