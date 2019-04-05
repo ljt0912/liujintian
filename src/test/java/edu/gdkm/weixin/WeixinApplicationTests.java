@@ -1,4 +1,4 @@
-package org.fkjava.weixin;
+package edu.gdkm.weixin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
