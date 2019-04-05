@@ -41,6 +41,7 @@ public class MessageReceiverController {
 			@RequestParam("nonce") String nonce, //
 			@RequestParam("echostr") String echostr//
 			
+			
 	) {
 		// 正常的接入方法要求对数据的有效性进行验证，验证通过以后返回echostr
 		// 把timestamp和nonce放入一个数组，并且对两个字符串进行排序
