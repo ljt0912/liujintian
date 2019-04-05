@@ -31,7 +31,7 @@ public class MessageServiceImpl implements MessageService {
 		// 不同的消息由于处理方式不同，所以建议放入不同的通道中，队列里面可以有近乎无数的通道。
 		// 如果多人共享一个服务器，还需要在通道前面增加一个特征。kemao_3_就是特征。
 		// msg.getMsgType()把不同类型的消息放入不同通道。
-		inMessageTemplate.convertAndSend("kemao_3_" + msg.getMsgType(), msg);
+		inMessageTemplate.convertAndSend("liujintian_" + msg.getMsgType(), msg);
 
 		// 返回的信息先不管
 		return null;
