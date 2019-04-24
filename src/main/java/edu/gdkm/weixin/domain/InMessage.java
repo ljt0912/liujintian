@@ -1,4 +1,4 @@
-package edu.gdkm.weixin.domain;
+package edu.gdkm.weixin.domain; 
 
 import java.io.Serializable;
 
