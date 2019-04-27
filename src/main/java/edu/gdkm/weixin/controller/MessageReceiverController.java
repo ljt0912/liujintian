@@ -86,6 +86,9 @@ public class MessageReceiverController {
 
 		// 截取XML字符串里面的消息类型
 		String type = xml.substring(xml.indexOf("<MsgType><![CDATA[") + 18);
+
+		
+		
 		type = type.substring(0, type.indexOf("]]></MsgType>"));
 
 		// 根据消息类型，找到对应的Java类型

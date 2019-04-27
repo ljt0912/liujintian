@@ -101,10 +101,20 @@
 
 	<build>
 		<plugins>
+			
 			<!-- 可选的，Spring Boot的Maven插件，用于生成jar文件的时候，把所有相关文件全部打包在一起 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				
+				<!-- 配置下面的参数，可以使用 mvn spring-boot:start 方式运行 -->
+				<!-- 而停止的是，直接以 mvn spring-boot:stop 方式停止，不需要再查进程 -->
+				<configuration>
+					<executable>true</executable>
+					<fork>true</fork>
+					<!-- 指定MBean端口，默认9001，每个程序使用一个端口号 -->
+					<jmxPort>9001</jmxPort>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
